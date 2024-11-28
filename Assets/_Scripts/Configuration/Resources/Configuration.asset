@@ -13,105 +13,145 @@ MonoBehaviour:
   m_Name: Configuration
   m_EditorClassIdentifier: 
   _characters:
-  - Name: Orange
+  - Name: Cute_Orange
     Type: 1
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 1, g: 0.53116846, b: 0.11792451, a: 1}
-  - Name: Red
+    LockedOnStart: 0
+  - Name: Cute_Red
     Type: 2
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: dc682e1f543c77847b62a1aceb8e0a0f, type: 3}
     Color: {r: 0.9150943, g: 0.09064613, b: 0.15713657, a: 1}
-  - Name: Silver
+    LockedOnStart: 0
+  - Name: Cute_Silver
     Type: 3
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.62352943, g: 0.62352943, b: 0.62352943, a: 1}
-  - Name: Green
+    LockedOnStart: 0
+  - Name: Cute_Green
     Type: 4
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.30980393, g: 0.8117647, b: 0.11372549, a: 1}
-  - Name: Gray
+    LockedOnStart: 1
+  - Name: Cute_Gray
     Type: 5
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.34117648, g: 0.34117648, b: 0.34117648, a: 1}
-  - Name: Brown
+    LockedOnStart: 0
+  - Name: Cute_Brown
     Type: 6
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.7490196, g: 0.27450982, b: 0, a: 1}
-  - Name: Lime
+    LockedOnStart: 0
+  - Name: Cute_Lime
     Type: 7
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.44705883, g: 0.70980394, b: 0.08627451, a: 1}
-  - Name: Sky
+    LockedOnStart: 1
+  - Name: Cute_Sky
     Type: 8
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.09019608, g: 0.78431374, b: 0.8784314, a: 1}
-  - Name: Purple
+    LockedOnStart: 0
+  - Name: Cute_Purple
     Type: 9
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.8352941, g: 0.19607843, b: 1, a: 1}
-  - Name: Yellow
+    LockedOnStart: 1
+  - Name: Cute_Yellow
     Type: 10
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.8901961, g: 0.7490196, b: 0.15686275, a: 1}
-  - Name: Tan
+    LockedOnStart: 0
+  - Name: Cute_Tan
     Type: 11
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.75686276, g: 0.42745098, b: 0.24705882, a: 1}
-  - Name: White
+    LockedOnStart: 1
+  - Name: Cute_White
     Type: 12
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.9245283, g: 0.9245283, b: 0.9245283, a: 1}
-  - Name: Pink
+    LockedOnStart: 0
+  - Name: Cute_Pink
     Type: 13
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.9372549, g: 0.17254902, b: 0.93333334, a: 1}
-  - Name: Blue
+    LockedOnStart: 0
+  - Name: Cute_Blue
     Type: 14
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.19215687, g: 0.44705883, b: 1, a: 1}
-  - Name: Black
+    LockedOnStart: 1
+  - Name: Cute_Black
     Type: 15
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.08627451, g: 0.08627451, b: 0.08627451, a: 1}
-  - Name: Fun Bot
+    LockedOnStart: 0
+  - Name: Cute_FunBot
     Type: 16
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.12941177, g: 0.75686276, b: 0.8117647, a: 1}
-  - Name: Gold
+    LockedOnStart: 1
+  - Name: Cute_Gold
     Type: 17
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.94509804, g: 0.6313726, b: 0.21176471, a: 1}
-  - Name: Sun
+    LockedOnStart: 0
+  - Name: Cute_Sun
     Type: 18
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.8039216, g: 0.84313726, b: 0.14901961, a: 1}
-  - Name: Tree
+    LockedOnStart: 1
+  - Name: Cute_Tree
     Type: 19
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.105882354, g: 0.6901961, b: 0.08235294, a: 1}
-  - Name: Computer
+    LockedOnStart: 1
+  - Name: Cute_Computer
     Type: 20
+    Mode: 0
     Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
     Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
     Color: {r: 0.5686275, g: 0.21568628, b: 1, a: 1}
+    LockedOnStart: 0
   _cellDefaultColor: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
   _cellSelectedColor: {r: 1, g: 1, b: 1, a: 1}

@@ -13,6 +13,9 @@ public class SoundPadItem : MonoBehaviour
     [Header("Drag Settings")]
     [SerializeField] private RectTransform _dragPanel;
 
+    [Header("Locked Settings")]
+    [SerializeField] private GameObject _lockedPanel;
+
     [Header("Renderer Settings")]
     [SerializeField] private Image[] _backgroundHolder;
     [SerializeField] private Image[] _iconHolder;
@@ -24,6 +27,11 @@ public class SoundPadItem : MonoBehaviour
     private UIEffect[] _colorFilters;
     private Configuration.CharacterDataPreset _info;
     private CanvasGroup _backgroundAlpha;
+    private bool Unlocked
+    {
+        get => !_info.LockedOnStart || PlayerPrefs.GetInt($"CharacterUnlocked_{_info.Type}", 0) == 1;
+        set => PlayerPrefs.SetInt($"CharacterUnlocked_{_info.Type}", value ? 1 : 0);
+    }
     #endregion
 
     #region UnityMethods
@@ -33,6 +41,7 @@ public class SoundPadItem : MonoBehaviour
         _info = Configuration.Data.GetCharacterInfo(_characterType);
         _backgroundAlpha = GetComponent<CanvasGroup>();
 
+        UpdateLockedPanel();
         SetRenderer();
         ResetItem();
     }
@@ -48,10 +57,22 @@ public class SoundPadItem : MonoBehaviour
     }
     #endregion
 
+    #region Lock
+    public void UnlockClick()
+    {
+
+    }
+
+    public void UpdateLockedPanel()
+    {
+        _lockedPanel.SetActive(!Unlocked);
+    }
+    #endregion
+
     #region Drag
     public void StartDrag()
     {
-        if (Used)
+        if (Used || !Unlocked)
             return;
 
         ActiveDragPanel(true);

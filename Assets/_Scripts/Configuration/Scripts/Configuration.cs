@@ -41,9 +41,11 @@ public class Configuration : ScriptableObject
     {
         public string Name;
         public Character.Type Type;
+        public MenuWindow.GameModeType Mode;
         public Sprite Icon;
         public AudioClip Sound;
         public Color Color;
+        public bool LockedOnStart;
     }
     #endregion
 
