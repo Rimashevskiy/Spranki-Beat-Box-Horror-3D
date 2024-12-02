@@ -12,6 +12,8 @@ public class MenuModeItem : MonoBehaviour
     #region Methods
     public void Select()
     {
+        Interface.Instance.Windows.Menu.GameMode = _mode;
+
         Map.Instance.LoadLocation(_mode);
 
         Interface.Instance.Windows.Menu.Hide();

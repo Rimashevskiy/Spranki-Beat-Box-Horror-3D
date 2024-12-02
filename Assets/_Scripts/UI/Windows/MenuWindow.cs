@@ -5,7 +5,7 @@ using UnityEngine;
 public class MenuWindow : WindowCore
 {
     #region Variables
-    public GameModeType GameMode { get; private set; }
+    public GameModeType GameMode { get; set; }
     #endregion
 
     #region Enums

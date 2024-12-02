@@ -22,6 +22,8 @@ public class Map : Singleton<Map>
 
         CurrentLocation = Instantiate(Resources.Load<GameObject>($"Prefabs/Mods/{gameMode}"), _locationRoot).GetComponentInChildren<GameplayLocation>();
         CurrentLocation.transform.SetLocalPositionAndRotation(Vector3.zero, new Quaternion());
+
+        BackgroundManager.Instance.SetBackground(gameMode);
     }
 
     public void UnloadLocation()

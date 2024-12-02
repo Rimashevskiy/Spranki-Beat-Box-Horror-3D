@@ -20,10 +20,10 @@ public class Configuration : ScriptableObject
     #endregion
 
     #region Methods
-    public CharacterDataPreset GetCharacterInfo(Character.Type type)
+    public CharacterDataPreset GetCharacterInfo(MenuWindow.GameModeType mode, Character.Type type)
     {
         for (int i = 0; i < _characters.Length; i++)
-            if (_characters[i].Type == type)
+            if (_characters[i].Mode == mode && _characters[i].Type == type)
                 return _characters[i];
 
         return null;

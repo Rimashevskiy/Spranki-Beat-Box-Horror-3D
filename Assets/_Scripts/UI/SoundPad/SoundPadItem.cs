@@ -23,23 +23,27 @@ public class SoundPadItem : MonoBehaviour
     public RectTransform DragPanel => _dragPanel;
     public Character.Type CharacterType => _characterType;
     public bool Used { get; private set; }
+    public Configuration.CharacterDataPreset Info { get; private set; }
+    public bool Unlocked
+    {
+        get => !Info.LockedOnStart || PlayerPrefs.GetInt($"CharacterUnlocked_{Info.Mode}_{Info.Type}", 0) == 1;
+        set => PlayerPrefs.SetInt($"CharacterUnlocked_{Info.Mode}_{Info.Type}", value ? 1 : 0);
+    }
 
     private UIEffect[] _colorFilters;
-    private Configuration.CharacterDataPreset _info;
     private CanvasGroup _backgroundAlpha;
-    private bool Unlocked
-    {
-        get => !_info.LockedOnStart || PlayerPrefs.GetInt($"CharacterUnlocked_{_info.Type}", 0) == 1;
-        set => PlayerPrefs.SetInt($"CharacterUnlocked_{_info.Type}", value ? 1 : 0);
-    }
     #endregion
 
     #region UnityMethods
     private void Awake()
     {
         _colorFilters = GetComponentsInChildren<UIEffect>(true);
-        _info = Configuration.Data.GetCharacterInfo(_characterType);
         _backgroundAlpha = GetComponent<CanvasGroup>();
+    }
+
+    private void OnEnable()
+    {
+        Info = Configuration.Data.GetCharacterInfo(Interface.Instance.Windows.Menu.GameMode, _characterType);
 
         UpdateLockedPanel();
         SetRenderer();
@@ -51,16 +55,16 @@ public class SoundPadItem : MonoBehaviour
     private void SetRenderer()
     {
         for (int i = 0; i < _backgroundHolder.Length; i++)
-            _backgroundHolder[i].color = _info.Color;
+            _backgroundHolder[i].color = Info.Color;
         for (int i = 0; i < _iconHolder.Length; i++)
-            _iconHolder[i].overrideSprite = _info.Icon;
+            _iconHolder[i].overrideSprite = Info.Icon;
     }
     #endregion
 
     #region Lock
     public void UnlockClick()
     {
-
+        UnlockGame.Instance.Show(this);
     }
 
     public void UpdateLockedPanel()

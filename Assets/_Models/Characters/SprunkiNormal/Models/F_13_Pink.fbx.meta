@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 789f706a90701c445acf2828b3af00c0
+guid: f5854cdfa34b6354a898cfa653ed4982
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: F_13_Pink
-    second: {fileID: 2100000, guid: fd97b450bb870bb47bcde6f17ca46b64, type: 2}
+    second: {fileID: 2100000, guid: d5233911bdd11304c8c0f55c2296bf08, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8a6677e2834bed841ae1c1fed8428abd
+guid: 039bee32de241004b96a35486007207f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: F_16_Fun_Bot
-    second: {fileID: 2100000, guid: 864fbac132970244e8ec34da334d1f5a, type: 2}
+    second: {fileID: 2100000, guid: 54ebf0fc658e46b4c90eabc42d6f8a4c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

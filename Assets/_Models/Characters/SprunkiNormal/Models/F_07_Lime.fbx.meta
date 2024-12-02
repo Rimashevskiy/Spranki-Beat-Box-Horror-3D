@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c81d7e4b9529a6a478c596bb0fbe57dd
+guid: 1122873bb489d2a4ea8adfbe96de67a9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: F_07_Lime
-    second: {fileID: 2100000, guid: 5b3d93b01d6852648a3e771f6217bcd4, type: 2}
+    second: {fileID: 2100000, guid: ef0fb43a2a2de3243bab6bbec898af35, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

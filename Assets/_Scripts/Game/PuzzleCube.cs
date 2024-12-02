@@ -4,86 +4,65 @@ using UnityEngine;
 
 public class PuzzleCube : MonoBehaviour
 {
-    [SerializeField] private int cubeSize = 10; // Размер большого куба
-    [SerializeField] private int minBlockSize = 2; // Минимальный размер блока
-    [SerializeField] private GameObject blockPrefab; // Префаб блока
+    #region Variables
+    [Header("Block Settings")]
+    [SerializeField] private Transform _blocksRoot;
 
-    void Start()
+    [Header("Character Settings")]
+    [SerializeField] private Transform _characterRoot;
+
+    private List<PuzzleCubeBlock> _blocks;
+    #endregion
+
+    #region UnityMethods
+    private void Awake()
     {
-        // Создаём начальное пространство
-        BoundsInt initialSpace = new BoundsInt(0, 0, 0, cubeSize, cubeSize, cubeSize);
+        _blocks = new List<PuzzleCubeBlock>(GetComponentsInChildren<PuzzleCubeBlock>());
+    }
+    #endregion
 
-        // Рекурсивно делим пространство
-        List<BoundsInt> blocks = SubdivideSpace(initialSpace);
+    #region GameCycle
+    public void RemoveBlock(PuzzleCubeBlock cubeBlock)
+    {
+        _blocks.Remove(cubeBlock);
 
-        // Создаём визуальные блоки
-        foreach (BoundsInt block in blocks)
+        Debug.Log(_blocks.Count);
+
+        if (_blocks.Count == 0)
+            UnlockGame.Instance.ShowComplete();
+    }
+    #endregion
+
+    #region Character
+    public void SpawnCharacter(MenuWindow.GameModeType mode, Character.Type type)
+    {
+        GameObject character = Instantiate(Resources.Load<GameObject>($"Prefabs/Characters/{mode}/{type}"), _characterRoot);
+        character.transform.SetLocalPositionAndRotation(Vector3.zero, new Quaternion());
+    }
+    #endregion
+
+    #region Tools
+#if UNITY_EDITOR
+    [ContextMenu("Polish Blocks")]
+    private void PolishBlocks()
+    {
+        int blocksCount = _blocksRoot.childCount;
+        List<Material> materials = new List<Material>(Resources.LoadAll<Material>("Materials/PuzzleCube/"));
+
+        for (int i = 0; i < blocksCount; i++)
         {
-            SpawnBlock(block);
+            _blocksRoot.position = new Vector3(RoundToNearest(_blocksRoot.position.x, 1), RoundToNearest(_blocksRoot.position.y, 1), RoundToNearest(_blocksRoot.position.z, 1));
+            _blocksRoot.localScale = new Vector3(RoundToNearest(_blocksRoot.localScale.x, 1), RoundToNearest(_blocksRoot.localScale.y, 1), RoundToNearest(_blocksRoot.localScale.z, 1));
+
+            _blocksRoot.GetChild(i).name = $"Block_{i}";
+            _blocksRoot.GetChild(i).GetComponent<MeshRenderer>().material = materials[Random.Range(0, materials.Count)];
         }
     }
 
-    private List<BoundsInt> SubdivideSpace(BoundsInt space)
+    private float RoundToNearest(float value, int decimalPlaces)
     {
-        List<BoundsInt> result = new List<BoundsInt>();
-
-        // Проверяем, можно ли дальше делить это пространство
-        if (space.size.x <= minBlockSize && space.size.y <= minBlockSize && space.size.z <= minBlockSize)
-        {
-            result.Add(space); // Если пространство достаточно маленькое, добавляем его в результат
-            return result;
-        }
-
-        // Выбираем случайную ось для деления
-        int axis = Random.Range(0, 3); // 0 = X, 1 = Y, 2 = Z
-
-        // Определяем точку деления
-        int splitPoint;
-        if (axis == 0 && space.size.x > minBlockSize * 2) // Делаем разрез по X
-        {
-            splitPoint = Random.Range(minBlockSize, space.size.x - minBlockSize);
-            BoundsInt left = new BoundsInt(space.xMin, space.yMin, space.zMin, splitPoint, space.size.y, space.size.z);
-            BoundsInt right = new BoundsInt(space.xMin + splitPoint, space.yMin, space.zMin, space.size.x - splitPoint, space.size.y, space.size.z);
-
-            result.AddRange(SubdivideSpace(left));
-            result.AddRange(SubdivideSpace(right));
-        }
-        else if (axis == 1 && space.size.y > minBlockSize * 2) // Делаем разрез по Y
-        {
-            splitPoint = Random.Range(minBlockSize, space.size.y - minBlockSize);
-            BoundsInt bottom = new BoundsInt(space.xMin, space.yMin, space.zMin, space.size.x, splitPoint, space.size.z);
-            BoundsInt top = new BoundsInt(space.xMin, space.yMin + splitPoint, space.zMin, space.size.x, space.size.y - splitPoint, space.size.z);
-
-            result.AddRange(SubdivideSpace(bottom));
-            result.AddRange(SubdivideSpace(top));
-        }
-        else if (axis == 2 && space.size.z > minBlockSize * 2) // Делаем разрез по Z
-        {
-            splitPoint = Random.Range(minBlockSize, space.size.z - minBlockSize);
-            BoundsInt front = new BoundsInt(space.xMin, space.yMin, space.zMin, space.size.x, space.size.y, splitPoint);
-            BoundsInt back = new BoundsInt(space.xMin, space.yMin, space.zMin + splitPoint, space.size.x, space.size.y, space.size.z - splitPoint);
-
-            result.AddRange(SubdivideSpace(front));
-            result.AddRange(SubdivideSpace(back));
-        }
-        else
-        {
-            // Если разрез невозможен, добавляем это пространство в результат
-            result.Add(space);
-        }
-
-        return result;
+        return (float)System.Math.Round(value, decimalPlaces);
     }
-
-    private void SpawnBlock(BoundsInt bounds)
-    {
-        if (blockPrefab != null)
-        {
-            // Создаём блок в центре заданного пространства
-            Vector3 center = bounds.center;
-            Vector3 size = bounds.size;
-            GameObject block = Instantiate(blockPrefab, center, Quaternion.identity, transform);
-            block.transform.localScale = size;
-        }
-    }
+#endif
+    #endregion
 }

@@ -20,7 +20,7 @@ public class Character : MonoBehaviour
     {
         _myAudio = GetComponent<AudioSource>();
         _myAnimator = GetComponentInChildren<Animator>();
-        _info = Configuration.Data.GetCharacterInfo(_myType);
+        _info = Configuration.Data.GetCharacterInfo(Interface.Instance.Windows.Menu.GameMode, _myType);
 
         _myAudio.clip = _info.Sound;
         _myAudio.loop = false;
@@ -38,10 +38,10 @@ public class Character : MonoBehaviour
     #region Music
     public void PlayMusic()
     {
-        _myAudio.Stop();
-        _myAudio.Play();
+        _myAudio.PlayOneShot(_myAudio.clip);
 
-        _myAnimator.Play("Play", 0, 0f);
+        //_myAudio.Stop();
+        //_myAnimator.Play("Play", 0, 0f);
     }
     #endregion
 

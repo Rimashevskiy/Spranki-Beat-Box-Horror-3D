@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1792
     height: 1120
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Recorder
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 49
+  controlID: 104764
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 50
+  controlID: 104765
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 51
+  controlID: 104766
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 52
+  controlID: 104767
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: RecorderWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -217,9 +217,9 @@ MonoBehaviour:
     y: 0
     width: 767.5
     height: 708
-  m_MinSize: {x: 201, y: 221}
+  m_MinSize: {x: 561, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
@@ -228,8 +228,8 @@ MonoBehaviour:
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 22}
-  m_Selected: 0
-  m_LastSelected: 5
+  m_Selected: 5
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 85
+  controlID: 105610
   draggingID: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -595,7 +595,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Light Settings
-      index: 0
+      index: 1
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -621,7 +621,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Cloth Constraints
-      index: 1
+      index: 3
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -634,7 +634,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Cloth Collisions
-      index: 2
+      index: 4
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -686,32 +686,6 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Occlusion Culling
-      index: 3
-      layout: 4
-      size: {x: 0, y: 0}
-      sizeOverriden: 0
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Physics Debugger
-      index: 4
-      layout: 4
-      size: {x: 0, y: 0}
-      sizeOverriden: 0
-    - dockPosition: 1
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Scene Visibility
       index: 5
       layout: 4
       size: {x: 0, y: 0}
@@ -724,8 +698,34 @@ MonoBehaviour:
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
-      id: Scene View/Particles
+      id: Scene View/Physics Debugger
       index: 6
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Scene Visibility
+      index: 7
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Particles
+      index: 8
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -790,7 +790,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/TrailRenderer
-      index: 7
+      index: 9
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -816,7 +816,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Tilemap Focus
-      index: 1
+      index: 2
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -838,11 +838,11 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 48, y: 48}
+      snapOffset: {x: 48, y: 10}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
-      index: 8
+      index: 11
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -857,9 +857,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -124.068115, y: -69.9099, z: -103.431564}
+    m_Target: {x: -299.64642, y: -298.13226, z: -298.98312}
     speed: 2
-    m_Value: {x: -124.068115, y: -69.9099, z: -103.431564}
+    m_Value: {x: -299.64642, y: -298.13226, z: -298.98312}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -884,7 +884,7 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     yGrid:
       m_Fade:
         m_Target: 1
@@ -905,13 +905,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.20082639, y: -0.65112835, z: 0.1846453, w: -0.7082529}
+    m_Target: {x: -0.20197906, y: 0.75343955, z: -0.2694971, w: -0.5647123}
     speed: 2
-    m_Value: {x: -0.20082484, y: -0.6511233, z: 0.18464386, w: -0.7082474}
+    m_Value: {x: -0.20197953, y: 0.7534413, z: -0.26949772, w: -0.5647136}
   m_Size:
-    m_Target: 10
+    m_Target: 2.598076
     speed: 2
-    m_Value: 10
+    m_Value: 2.598076
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1026,10 +1026,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 224
-    y: 83
-    width: 670.5
-    height: 603
+    x: 0
+    y: 30
+    width: 766.5
+    height: 687
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2045,25 +2045,25 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d6f9ffff
-      m_LastClickedID: -1578
-      m_ExpandedIDs: def9fffffaf9ffff2cfbffff806200002e6300003c63000094630000a6630000d0630000d6630000
+      m_SelectedIDs: 96630000
+      m_LastClickedID: 25494
+      m_ExpandedIDs: 7c47f8fff2e4fbffc6e9fbff98edfbffb822fcff349efcff1c3dfdffc03dfdff183affff84c8ffffc0f2ffff2cfbffffc0620000f6620000306300003e630000d26300000e64000012640000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: PuzzleCube_Cute_Lime
-        m_OriginalName: PuzzleCube_Cute_Lime
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 25552
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 12}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -2150,7 +2150,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Prefabs/Characters
+    - Assets/_Models/Characters/SprunkiNormal/Models
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -2158,16 +2158,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Resources/Prefabs/Characters
+  - Assets/_Models/Characters/SprunkiNormal/Models
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/darkflamedx/Storage/Development/Hookah/SprankiBeatBoxHorror3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 251.78833}
-    m_SelectedIDs: a6650000
-    m_LastClickedID: 26022
-    m_ExpandedIDs: 000000008e65000090650000926500009465000096650000986500009a6500009c6500009e650000a0650000a2650000a4650000a6650000c2650000e6b70000
+    scrollPos: {x: 0, y: 31}
+    m_SelectedIDs: 226a0200
+    m_LastClickedID: 158242
+    m_ExpandedIDs: 00000000a6650000a8650000aa650000ac650000ae650000b2650000b4650000b6650000b8650000ba650000bc650000be650000d8650000da650000ec650000d26600000487000032a80000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2195,7 +2195,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008e65000090650000926500009465000096650000986500009a6500009c6500009e650000a0650000a2650000a4650000a6650000
+    m_ExpandedIDs: 00000000a6650000a8650000aa650000ac650000ae650000b2650000b4650000b6650000b8650000ba650000bc650000be650000d8650000ec650000d26600000487000032a80000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2223,7 +2223,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000ba610000be6b0000586d000006880000bc890000f4a3000066630000166300001a3a0200
+    m_ExpandedInstanceIDs: c6230000ba610000be6b0000586d000006880000bc890000f4a3000066630000166300001a3a020014000100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2247,7 +2247,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 58}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 438
@@ -2287,7 +2287,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 25552
+  m_LastSelectedObjectID: 25512
 --- !u!114 &27
 MonoBehaviour:
   m_ObjectHideFlags: 52

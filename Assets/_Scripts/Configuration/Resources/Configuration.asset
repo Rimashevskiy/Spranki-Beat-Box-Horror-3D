@@ -16,141 +16,281 @@ MonoBehaviour:
   - Name: Cute_Orange
     Type: 1
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: 6390f4e4f7bf6474c9515de8dca40286, type: 3}
+    Sound: {fileID: 8300000, guid: caf4b0c6576fe4778b6233d56a26969a, type: 3}
+    Color: {r: 1, g: 0.53116846, b: 0.11792451, a: 1}
+    LockedOnStart: 0
+  - Name: Scary_Orange
+    Type: 1
+    Mode: 1
+    Icon: {fileID: 21300000, guid: 6390f4e4f7bf6474c9515de8dca40286, type: 3}
+    Sound: {fileID: 8300000, guid: caf4b0c6576fe4778b6233d56a26969a, type: 3}
     Color: {r: 1, g: 0.53116846, b: 0.11792451, a: 1}
     LockedOnStart: 0
   - Name: Cute_Red
     Type: 2
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: dc682e1f543c77847b62a1aceb8e0a0f, type: 3}
+    Icon: {fileID: 21300000, guid: a0449264856e744b3bbe954922129eff, type: 3}
+    Sound: {fileID: 8300000, guid: f5f7ab5622c3e45179086a8e38dc06ba, type: 3}
+    Color: {r: 0.9150943, g: 0.09064613, b: 0.15713657, a: 1}
+    LockedOnStart: 0
+  - Name: Scary_Red
+    Type: 2
+    Mode: 1
+    Icon: {fileID: 21300000, guid: a0449264856e744b3bbe954922129eff, type: 3}
+    Sound: {fileID: 8300000, guid: f5f7ab5622c3e45179086a8e38dc06ba, type: 3}
     Color: {r: 0.9150943, g: 0.09064613, b: 0.15713657, a: 1}
     LockedOnStart: 0
   - Name: Cute_Silver
     Type: 3
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: 368becc14edfd4e23ae10c102c1c0614, type: 3}
+    Sound: {fileID: 8300000, guid: 6ea63fb708574483ca60a52b36054d90, type: 3}
+    Color: {r: 0.62352943, g: 0.62352943, b: 0.62352943, a: 1}
+    LockedOnStart: 0
+  - Name: Scary_Silver
+    Type: 3
+    Mode: 1
+    Icon: {fileID: 21300000, guid: 368becc14edfd4e23ae10c102c1c0614, type: 3}
+    Sound: {fileID: 8300000, guid: 6ea63fb708574483ca60a52b36054d90, type: 3}
     Color: {r: 0.62352943, g: 0.62352943, b: 0.62352943, a: 1}
     LockedOnStart: 0
   - Name: Cute_Green
     Type: 4
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: 3890d66891d4e4737b9e54c836dab4bb, type: 3}
+    Sound: {fileID: 8300000, guid: 3781b15d403de43e4ba2becbbd069cd3, type: 3}
+    Color: {r: 0.30980393, g: 0.8117647, b: 0.11372549, a: 1}
+    LockedOnStart: 1
+  - Name: Scary_Green
+    Type: 4
+    Mode: 1
+    Icon: {fileID: 21300000, guid: 3890d66891d4e4737b9e54c836dab4bb, type: 3}
+    Sound: {fileID: 8300000, guid: 3781b15d403de43e4ba2becbbd069cd3, type: 3}
     Color: {r: 0.30980393, g: 0.8117647, b: 0.11372549, a: 1}
     LockedOnStart: 1
   - Name: Cute_Gray
     Type: 5
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: ac0e3a19c1fd046c58ccf8c83735efbb, type: 3}
+    Sound: {fileID: 8300000, guid: ee29d4df017014219847f6ad765a59bf, type: 3}
+    Color: {r: 0.34117648, g: 0.34117648, b: 0.34117648, a: 1}
+    LockedOnStart: 0
+  - Name: Scary_Gray
+    Type: 5
+    Mode: 1
+    Icon: {fileID: 21300000, guid: ac0e3a19c1fd046c58ccf8c83735efbb, type: 3}
+    Sound: {fileID: 8300000, guid: ee29d4df017014219847f6ad765a59bf, type: 3}
     Color: {r: 0.34117648, g: 0.34117648, b: 0.34117648, a: 1}
     LockedOnStart: 0
   - Name: Cute_Brown
     Type: 6
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: 19e97f136b62b44acba5c945c723233a, type: 3}
+    Sound: {fileID: 8300000, guid: 2695443c969c54905b2f8965e76568ca, type: 3}
+    Color: {r: 0.7490196, g: 0.27450982, b: 0, a: 1}
+    LockedOnStart: 0
+  - Name: Scary_Brown
+    Type: 6
+    Mode: 1
+    Icon: {fileID: 21300000, guid: 19e97f136b62b44acba5c945c723233a, type: 3}
+    Sound: {fileID: 8300000, guid: 2695443c969c54905b2f8965e76568ca, type: 3}
     Color: {r: 0.7490196, g: 0.27450982, b: 0, a: 1}
     LockedOnStart: 0
   - Name: Cute_Lime
     Type: 7
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: 9ab6a8fdabf0742cb963133023fdd476, type: 3}
+    Sound: {fileID: 8300000, guid: 56f1306b3342a434fb4ddd32fab3b167, type: 3}
+    Color: {r: 0.44705883, g: 0.70980394, b: 0.08627451, a: 1}
+    LockedOnStart: 1
+  - Name: Scary_Lime
+    Type: 7
+    Mode: 1
+    Icon: {fileID: 21300000, guid: 9ab6a8fdabf0742cb963133023fdd476, type: 3}
+    Sound: {fileID: 8300000, guid: 56f1306b3342a434fb4ddd32fab3b167, type: 3}
     Color: {r: 0.44705883, g: 0.70980394, b: 0.08627451, a: 1}
     LockedOnStart: 1
   - Name: Cute_Sky
     Type: 8
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: bdf08fb417a6e4e8b807da8c8a7c892f, type: 3}
+    Sound: {fileID: 8300000, guid: c7c5136ec4a8a4cf4ab4b58e34d7b13e, type: 3}
+    Color: {r: 0.09019608, g: 0.78431374, b: 0.8784314, a: 1}
+    LockedOnStart: 0
+  - Name: Scary_Sky
+    Type: 8
+    Mode: 1
+    Icon: {fileID: 21300000, guid: bdf08fb417a6e4e8b807da8c8a7c892f, type: 3}
+    Sound: {fileID: 8300000, guid: c7c5136ec4a8a4cf4ab4b58e34d7b13e, type: 3}
     Color: {r: 0.09019608, g: 0.78431374, b: 0.8784314, a: 1}
     LockedOnStart: 0
   - Name: Cute_Purple
     Type: 9
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: d4847a0c477dd48c8b8207310b804a44, type: 3}
+    Sound: {fileID: 8300000, guid: 85610d7ee3ddc404599e1e014bd5c941, type: 3}
+    Color: {r: 0.8352941, g: 0.19607843, b: 1, a: 1}
+    LockedOnStart: 1
+  - Name: Scary_Purple
+    Type: 9
+    Mode: 1
+    Icon: {fileID: 21300000, guid: d4847a0c477dd48c8b8207310b804a44, type: 3}
+    Sound: {fileID: 8300000, guid: 85610d7ee3ddc404599e1e014bd5c941, type: 3}
     Color: {r: 0.8352941, g: 0.19607843, b: 1, a: 1}
     LockedOnStart: 1
   - Name: Cute_Yellow
     Type: 10
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: 302496e3fbbf046e3acaf03d9e8bb1b8, type: 3}
+    Sound: {fileID: 8300000, guid: eab1ceaec404343588c430c7c178b8f6, type: 3}
+    Color: {r: 0.8901961, g: 0.7490196, b: 0.15686275, a: 1}
+    LockedOnStart: 0
+  - Name: Scary_Yellow
+    Type: 10
+    Mode: 1
+    Icon: {fileID: 21300000, guid: 302496e3fbbf046e3acaf03d9e8bb1b8, type: 3}
+    Sound: {fileID: 8300000, guid: eab1ceaec404343588c430c7c178b8f6, type: 3}
     Color: {r: 0.8901961, g: 0.7490196, b: 0.15686275, a: 1}
     LockedOnStart: 0
   - Name: Cute_Tan
     Type: 11
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: cbdbd334efd80439abaa331700c02461, type: 3}
+    Sound: {fileID: 8300000, guid: 7ec12995b45d7477cabcd42471f19c60, type: 3}
+    Color: {r: 0.75686276, g: 0.42745098, b: 0.24705882, a: 1}
+    LockedOnStart: 1
+  - Name: Scary_Tan
+    Type: 11
+    Mode: 1
+    Icon: {fileID: 21300000, guid: cbdbd334efd80439abaa331700c02461, type: 3}
+    Sound: {fileID: 8300000, guid: 7ec12995b45d7477cabcd42471f19c60, type: 3}
     Color: {r: 0.75686276, g: 0.42745098, b: 0.24705882, a: 1}
     LockedOnStart: 1
   - Name: Cute_White
     Type: 12
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: 76f1e153d8d0945df936f9ad85e38a1a, type: 3}
+    Sound: {fileID: 8300000, guid: 1f5e5cc2842f145af9e821ff4758728f, type: 3}
+    Color: {r: 0.9245283, g: 0.9245283, b: 0.9245283, a: 1}
+    LockedOnStart: 0
+  - Name: Scary_White
+    Type: 12
+    Mode: 1
+    Icon: {fileID: 21300000, guid: 76f1e153d8d0945df936f9ad85e38a1a, type: 3}
+    Sound: {fileID: 8300000, guid: 1f5e5cc2842f145af9e821ff4758728f, type: 3}
     Color: {r: 0.9245283, g: 0.9245283, b: 0.9245283, a: 1}
     LockedOnStart: 0
   - Name: Cute_Pink
     Type: 13
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: 94897401cac59424fa8c8c06fb9fbe4c, type: 3}
+    Sound: {fileID: 8300000, guid: 5855bf511ddfe42768481eea15bb17f6, type: 3}
+    Color: {r: 0.9372549, g: 0.17254902, b: 0.93333334, a: 1}
+    LockedOnStart: 0
+  - Name: Scary_Pink
+    Type: 13
+    Mode: 1
+    Icon: {fileID: 21300000, guid: 94897401cac59424fa8c8c06fb9fbe4c, type: 3}
+    Sound: {fileID: 8300000, guid: 5855bf511ddfe42768481eea15bb17f6, type: 3}
     Color: {r: 0.9372549, g: 0.17254902, b: 0.93333334, a: 1}
     LockedOnStart: 0
   - Name: Cute_Blue
     Type: 14
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: 259de23ca12234742bd8f480766608a8, type: 3}
+    Sound: {fileID: 8300000, guid: 487114228a48a4346bfc0a8226156695, type: 3}
+    Color: {r: 0.19215687, g: 0.44705883, b: 1, a: 1}
+    LockedOnStart: 1
+  - Name: Scary_Blue
+    Type: 14
+    Mode: 1
+    Icon: {fileID: 21300000, guid: 259de23ca12234742bd8f480766608a8, type: 3}
+    Sound: {fileID: 8300000, guid: 487114228a48a4346bfc0a8226156695, type: 3}
     Color: {r: 0.19215687, g: 0.44705883, b: 1, a: 1}
     LockedOnStart: 1
   - Name: Cute_Black
     Type: 15
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: ee2fa7cf4956548feb1e0a40b7cb47ab, type: 3}
+    Sound: {fileID: 8300000, guid: d2cf2fcc396424c2681d9217e3dc2e4d, type: 3}
+    Color: {r: 0.08627451, g: 0.08627451, b: 0.08627451, a: 1}
+    LockedOnStart: 0
+  - Name: Scary_Black
+    Type: 15
+    Mode: 1
+    Icon: {fileID: 21300000, guid: ee2fa7cf4956548feb1e0a40b7cb47ab, type: 3}
+    Sound: {fileID: 8300000, guid: d2cf2fcc396424c2681d9217e3dc2e4d, type: 3}
     Color: {r: 0.08627451, g: 0.08627451, b: 0.08627451, a: 1}
     LockedOnStart: 0
   - Name: Cute_FunBot
     Type: 16
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: 2d6ac8490fb8d4a978be5b9cb13fc1ac, type: 3}
+    Sound: {fileID: 8300000, guid: f4cadb1b1e5a94ab4882f8dc881b9f1c, type: 3}
+    Color: {r: 0.12941177, g: 0.75686276, b: 0.8117647, a: 1}
+    LockedOnStart: 1
+  - Name: Scary_FunBot
+    Type: 16
+    Mode: 1
+    Icon: {fileID: 21300000, guid: 2d6ac8490fb8d4a978be5b9cb13fc1ac, type: 3}
+    Sound: {fileID: 8300000, guid: f4cadb1b1e5a94ab4882f8dc881b9f1c, type: 3}
     Color: {r: 0.12941177, g: 0.75686276, b: 0.8117647, a: 1}
     LockedOnStart: 1
   - Name: Cute_Gold
     Type: 17
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: ab7cbaba4a7c54570b21c14747c1e940, type: 3}
+    Sound: {fileID: 8300000, guid: d44a034aa83744cc18a15d2311155a55, type: 3}
+    Color: {r: 0.94509804, g: 0.6313726, b: 0.21176471, a: 1}
+    LockedOnStart: 0
+  - Name: Scary_Gold
+    Type: 17
+    Mode: 1
+    Icon: {fileID: 21300000, guid: ab7cbaba4a7c54570b21c14747c1e940, type: 3}
+    Sound: {fileID: 8300000, guid: d44a034aa83744cc18a15d2311155a55, type: 3}
     Color: {r: 0.94509804, g: 0.6313726, b: 0.21176471, a: 1}
     LockedOnStart: 0
   - Name: Cute_Sun
     Type: 18
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: a621c8d35c7b647238991966695b6334, type: 3}
+    Sound: {fileID: 8300000, guid: e3b9daf94718347d8907b8442f18d6fc, type: 3}
+    Color: {r: 0.8039216, g: 0.84313726, b: 0.14901961, a: 1}
+    LockedOnStart: 1
+  - Name: Scary_Sun
+    Type: 18
+    Mode: 1
+    Icon: {fileID: 21300000, guid: a621c8d35c7b647238991966695b6334, type: 3}
+    Sound: {fileID: 8300000, guid: e3b9daf94718347d8907b8442f18d6fc, type: 3}
     Color: {r: 0.8039216, g: 0.84313726, b: 0.14901961, a: 1}
     LockedOnStart: 1
   - Name: Cute_Tree
     Type: 19
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: 83dababf6c56b4bf4b2233774c47f19c, type: 3}
+    Sound: {fileID: 8300000, guid: 49ff44b15ff1f4c71a8153b930b5d784, type: 3}
+    Color: {r: 0.105882354, g: 0.6901961, b: 0.08235294, a: 1}
+    LockedOnStart: 1
+  - Name: Scary_Tree
+    Type: 19
+    Mode: 1
+    Icon: {fileID: 21300000, guid: 83dababf6c56b4bf4b2233774c47f19c, type: 3}
+    Sound: {fileID: 8300000, guid: 49ff44b15ff1f4c71a8153b930b5d784, type: 3}
     Color: {r: 0.105882354, g: 0.6901961, b: 0.08235294, a: 1}
     LockedOnStart: 1
   - Name: Cute_Computer
     Type: 20
     Mode: 0
-    Icon: {fileID: 21300000, guid: f1d08e6ddd9d244fba0d69a3f6fe801a, type: 3}
-    Sound: {fileID: 8300000, guid: f33fdbf03db9a6b4b8f9cfa27efc2ea8, type: 3}
+    Icon: {fileID: 21300000, guid: 7e07f9b5a0faa4923a40f521a2dd29d2, type: 3}
+    Sound: {fileID: 8300000, guid: 178834abd88974500b8030fb8822b494, type: 3}
+    Color: {r: 0.5686275, g: 0.21568628, b: 1, a: 1}
+    LockedOnStart: 0
+  - Name: Scary_Computer
+    Type: 20
+    Mode: 1
+    Icon: {fileID: 21300000, guid: 7e07f9b5a0faa4923a40f521a2dd29d2, type: 3}
+    Sound: {fileID: 8300000, guid: 178834abd88974500b8030fb8822b494, type: 3}
     Color: {r: 0.5686275, g: 0.21568628, b: 1, a: 1}
     LockedOnStart: 0
   _cellDefaultColor: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
