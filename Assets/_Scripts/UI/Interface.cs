@@ -26,6 +26,7 @@ public class Interface : Singleton<Interface>
         public GameWindow Game;
         public SettingsWindow Settings;
         public UnlockWindow Unlock;
+        public AudioRecorderWindow AudioRecorder;
     }
     #endregion
 }

@@ -20,6 +20,9 @@ public class Map : Singleton<Map>
     {
         UnloadLocation();
 
+        if (gameMode == MenuWindow.GameModeType.Custom)
+            gameMode = MenuWindow.GameModeType.Cute;
+
         CurrentLocation = Instantiate(Resources.Load<GameObject>($"Prefabs/Mods/{gameMode}"), _locationRoot).GetComponentInChildren<GameplayLocation>();
         CurrentLocation.transform.SetLocalPositionAndRotation(Vector3.zero, new Quaternion());
 

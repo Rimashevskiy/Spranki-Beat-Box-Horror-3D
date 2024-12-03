@@ -20,10 +20,14 @@ public class SoundPadItem : MonoBehaviour
     [SerializeField] private Image[] _backgroundHolder;
     [SerializeField] private Image[] _iconHolder;
 
+    [Header("Recording Settings")]
+    [SerializeField] private Toggle _hasRecording;
+
     public RectTransform DragPanel => _dragPanel;
     public Character.Type CharacterType => _characterType;
     public bool Used { get; private set; }
     public Configuration.CharacterDataPreset Info { get; private set; }
+    public AudioClip CustomAudio { get; private set; }
     public bool Unlocked
     {
         get => !Info.LockedOnStart || PlayerPrefs.GetInt($"CharacterUnlocked_{Info.Mode}_{Info.Type}", 0) == 1;
@@ -32,6 +36,7 @@ public class SoundPadItem : MonoBehaviour
 
     private UIEffect[] _colorFilters;
     private CanvasGroup _backgroundAlpha;
+    private float _startDragTime;
     #endregion
 
     #region UnityMethods
@@ -45,9 +50,30 @@ public class SoundPadItem : MonoBehaviour
     {
         Info = Configuration.Data.GetCharacterInfo(Interface.Instance.Windows.Menu.GameMode, _characterType);
 
+        UpdateRecordingStatus();
         UpdateLockedPanel();
         SetRenderer();
         ResetItem();
+    }
+    #endregion
+
+    #region Recording
+    private void UpdateRecordingStatus()
+    {
+        _hasRecording.gameObject.SetActive(Interface.Instance.Windows.Menu.GameMode == MenuWindow.GameModeType.Custom);
+        _hasRecording.isOn = CustomAudio;
+    }
+
+    public void StartAudioRecording()
+    {
+        Interface.Instance.Windows.AudioRecorder.Show(this);
+    }
+
+    public void SetCustomAudio(AudioClip audio)
+    {
+        CustomAudio = audio;
+
+        UpdateRecordingStatus();
     }
     #endregion
 
@@ -79,10 +105,20 @@ public class SoundPadItem : MonoBehaviour
         if (Used || !Unlocked)
             return;
 
+        _startDragTime = Time.realtimeSinceStartup;
+
         ActiveDragPanel(true);
         ChangeColor(true);
 
         Interface.Instance.Windows.Game.MainSoundPad.StartDragItem(this);
+    }
+
+    public void StopDrag()
+    {
+        if (Unlocked && Interface.Instance.Windows.Menu.GameMode == MenuWindow.GameModeType.Custom && Time.realtimeSinceStartup - _startDragTime < 0.1f)
+        {
+            StartAudioRecording();
+        }
     }
 
     public void ResetItem()

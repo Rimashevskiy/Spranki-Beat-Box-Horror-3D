@@ -22,6 +22,9 @@ public class Configuration : ScriptableObject
     #region Methods
     public CharacterDataPreset GetCharacterInfo(MenuWindow.GameModeType mode, Character.Type type)
     {
+        if (mode == MenuWindow.GameModeType.Custom)
+            mode = MenuWindow.GameModeType.Cute;
+
         for (int i = 0; i < _characters.Length; i++)
             if (_characters[i].Mode == mode && _characters[i].Type == type)
                 return _characters[i];

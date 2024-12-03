@@ -46,10 +46,16 @@ public class CharacterCell : MonoBehaviour
 
         _body.SetActive(false);
 
-        _character = Instantiate(Resources.Load<GameObject>($"Prefabs/Characters/{Interface.Instance.Windows.Menu.GameMode}/{CurrentCharacter}"), _characterRoot).GetComponent<Character>();
+        bool isCustomMode = Interface.Instance.Windows.Menu.GameMode == MenuWindow.GameModeType.Custom;
+        MenuWindow.GameModeType mode = isCustomMode ? MenuWindow.GameModeType.Cute : Interface.Instance.Windows.Menu.GameMode;
+
+        _character = Instantiate(Resources.Load<GameObject>($"Prefabs/Characters/{mode}/{CurrentCharacter}"), _characterRoot).GetComponent<Character>();
         _character.transform.SetLocalPositionAndRotation(Vector3.zero, new Quaternion());
 
         _character.Cell = this;
+
+        if (isCustomMode)
+            _character.SetCustomSound(soundPadItem.CustomAudio);
     }
 
     public void ResetCharacter()

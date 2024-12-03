@@ -22,7 +22,8 @@ public class Character : MonoBehaviour
         _myAnimator = GetComponentInChildren<Animator>();
         _info = Configuration.Data.GetCharacterInfo(Interface.Instance.Windows.Menu.GameMode, _myType);
 
-        _myAudio.clip = _info.Sound;
+        if (!_myAudio.clip)
+            _myAudio.clip = _info.Sound;
         _myAudio.loop = false;
 
         Map.Instance.CurrentLocation.Characters.Add(this);
@@ -36,6 +37,11 @@ public class Character : MonoBehaviour
     #endregion
 
     #region Music
+    public void SetCustomSound(AudioClip sound)
+    {
+        _myAudio.clip = sound;
+    }
+
     public void PlayMusic()
     {
         _myAudio.PlayOneShot(_myAudio.clip);
